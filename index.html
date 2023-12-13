@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #f3f3f3;
+			font-family: 'Poppins', sans-serif;
+		}
+		.menu{
+			padding: 0 10px 30px 10px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit);
+			grid-gap: 20px 40px;
+			/*display: flex;
+			text-align: justify;*/
+		}
+		.heading{
+			background-color: #248743;
+			color: #ffffff;
+			margin-bottom: 30px;
+			padding: 30px 0;
+			grid-column: 1/-1;
+			text-align: center;
+		}
+		.heading>h1{
+			font-weight: 400;
+			font-size: 30px;
+			letter-spacing: 10px;
+			margin-bottom: 10px;		
+		}
+		.heading>h3{
+			font-weight: 600;
+			font-size: 22px;
+			letter-spacing: 5px;
+		}
+		.food-items{
+			display: grid;
+			position: relative;
+			grid-template-rows: auto 1fr;
+			border-radius: 15px;
+			box-shadow: 0 0 15px rgba(0,0,0,0.1);
+			width: 50%;
+		}
+		.food-items, img{
+			position: relative;
+			width: 100%;
+			border-radius: 15px 15px 0 0;
+		}
+		h1{
+			grid-column: 1/-1;
+			text-align: center;
+		}
+		.details{
+			padding: 20px 10px;
+			display: grid;
+			grid-template-rows: auto 1fr 50px;
+			grid-row-gap: 15px;
+		}
+		.details-sub{
+			display: grid;
+			grid-template-columns: auto auto;
+		}
+		.details-sub>h5{
+			font-weight: 600;
+			font-size: 20px;
+		}
+		.price{
+			text-align: right;
+		}
+		.details>p{
+			color: #6f6f6f;
+			font-size: 15px;
+			line-height: 28px;
+			font-weight: 400;
+			align-self: stretch;
+		}
+		.details>button{
+			background-color: #cb202d;
+			border: none;
+			color: #ffffff;
+			font-size: 16px;
+			font-weight: 600;
+			border-radius: 5px;
+			width: 180 px;
+		}
+		.img {
+			border-radius: 50%;
+		}
+		.links {
+			font-family: "Arial", sans-serif; 
+            font-weight: bold;
+            color: #3498db;
+		}
+		.row1{
+			display: flex;
+			text-align: justify;
+			margin-bottom: 10px;
+		}
+		.row2{
+			display: flex;
+			text-align: justify;
+			margin-bottom: 10px;			
+		}
+		.row3{
+			display: flex;
+			text-align: justify;
+			margin-bottom: 10px;			
+		}
+		.row4{
+			display: flex;
+			text-align: justify;
+			margin-bottom: 10px;			
+		}
+		.row5{
+			display: flex;
+			text-align: justify;
+			margin-bottom: 10px;			
+		}
+	</style>
+</head>
+<body>
+	<div class="menu" container fluid>
+		<div class="heading">
+			<img src="https://logos-world.net/wp-content/uploads/2023/06/Wingstop-Emblem.png" height="100px" width="200px">
+			<h1>WINGSTOP</h1>
+			<h3>&mdash; MENU &mdash; </h3>
+		</div>
+		
+
+		<div class="row2">
+		<div class="food-items">
+			<img src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/28a4118e-be9a-4cf3-8ead-8527af698859-retina-large.png">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Tenders</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>With 4pcs of Tenders, you can choose up to 2 flavors!</p>
+				<button>Order</button>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="https://wingsider.wingstop.com/wp-content/uploads/2019/01/Louisiana-Voodoo-Fries-with-Tenders-Cheese-Lovers-Day-1024x512.png">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Sides</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>Our sides includes Regular Signature Seasoned fries (Thick cut skin-on fries tossed in our signature seasoning, served hot and fresh), Large Signature Seasoned Fries (Thick cut skin-on fries tossed in our signature seasoning, served hot and fresh), Regular/Large Cajun Fries (Thick cut skin-on fries tossed in our cajun seasoning), Large Curly Fries (Cripsy curly fries), Large Mushroom Fritters (Fresh button mushroojms battered and fried to golden perfection), Large Louisiana Voodoo Fries (Signature seasoned fries with cheese sauce, ranch and a touch of cajun seasoning, Hand-Cut Onion Rings (Original hand-cut onion rings; golden, crips and addictive), Regular/Large Coleslaw (Our very own cold, crisp and crunchy coleslaw made from scratch), and Quinoa Rice (Flavored rice with quinoa).</p>
+				<button>Order</button>
+			</div>
+		</div>
+		</div>
+		<<div class=row3>
+		<div class="food-items">
+			<img src="https://www.pngitem.com/pimgs/m/299-2991869_ranch-dressing-transparent-png-png-download.png">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Dips</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>You can choose between Ranch (Made from scratch daily in each store), and Cheese (Jalapeno cheese sauce).</p>
+				<button>Order</button>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="https://emirates-restaurants.com/wp-content/uploads/43_WingStop_Vanilla_milkshake.jpg">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Drinks</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>Coke (500ml), Coke Zero (500ml), Ice Lemon Tea (500ml), Ayataka (500ml), Dasani Mineral Water (600ml).</p>
+				<button>Order</button>
+			</div>
+		</div>
+		</div>
+		<div class=row4>
+		<div class="food-items">
+			<img src="https://s3.ap-southeast-1.amazonaws.com/wingstop.com.sg/content/prod/menu/Tenders-Meal-2.png">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Tenders Combo</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>4 Piece Tenders Combo. Choose up to 2 flavors, 1 regular side, 1 dip, and 1 bottled drink.</p>
+				<button>Order</button>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="https://s3.ap-southeast-1.amazonaws.com/wingstop.com.sg/content/prod/menu/Boneless-Wings-Meal-2.png">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Boneless Wings Combo</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>With the 6 Piece Boneless Wing Combo, you can choose up to 2 flavors, 1 regular side, 1 dip, and 1 bottled drink. With the 8 Piece Boneless Wing Combo, you can choose up to 2 flavors, 1 regular side, 1 dip, and 1 bottled drink.</p>
+				<button>Order</button>
+			</div>
+		</div>
+		</div>
+		<div class=row5>
+		<div class="food-items">
+			<img src="https://s3.ap-southeast-1.amazonaws.com/wingstop.com.sg/content/prod/menu/Classic-Wings-Meal-2.png">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Classic Wings Combo</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>With the 6 Piece Boneless Wing Combo, you can choose up to 2 flavors, 1 regular side, 1 dip, and 1 bottled drink. With the 8 Piece Boneless Wing Combo, you can choose up to 2 flavors, 1 regular side, 1 dip, and 1 bottled drink.</p>
+				<button>Order</button>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="https://olo-images-live.imgix.net/07/077a04cb0af549209992a6f1c9868fc4.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=524&h=350&fit=crop&fm=png32&s=7499b12ab667bca1e7035330fd68fedc">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Group Meal</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>The Family pack (For 4-5 Pax) includes 12 Classic Wings (Choose up to 2 flavors), 12 Boneless Wings (Choose up to 2 flavors), 6 Tenders (Coose up to 2 flavors), 4 regular sides and 4 dips. The Party pack (For 7-8 Pax) includes 20 Classic Wings (Choose up to 2 flavors), 20 Boneless Wings (Choose up to 2 flavors), 10 Tenders (Coose up to 2 flavors), 6 regular sides and 6 dips.</p>
+				<button>Order</button>
+			</div>
+		</div>
+		</div>
+		<div class=row2>
+		<div class="food-items">
+			<img src="https://www.usatoday.com/gcdn/presto/2021/06/21/USAT/14d44280-fcf8-4563-b2ee-b17389a8dd2e-Thighstop_Press3_3.jpeg">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Boneless Wings</h5>
+					<h5 class="price">$15</h5>
+				</div>
+				<p>With the 6 Piece Boneless Wing Combo, you can choose up to 2 flavors, 1 regular side, 1 dip, and 1 bottled drink. With the 8 Piece Boneless Wing Combo, you can choose up to 2 flavors, 1 regular side, 1 dip, and 1 bottled drink.</p>
+				<button>Order</button>
+			</div>
+		</div>
+		<div class="food-items">
+			<img src="https://www.sbsun.com/wp-content/uploads/2017/12/mangohabaneroforcedperspective_flat_retouch.jpg?w=1024">
+			<div class="details">
+				<div class="details-sub">
+					<h5>Classic Wings</h5>
+					<h5 class="price">$8</h5>
+				</div>
+				<p>You can choose up to 2 flavors with 6-12 Pcs, 3 flavors with 20-30 pcs, and 4 flavors with 50-100pcs of our Boneless Wings.</p>
+				<button>Order</button>
+			</div>
+		</div>
+		</div>
+	<br><br>
+<center>
+	<div>
+	<table border="3" cellspacing="5" cellpadding="3" bordercolor="#248743">
+		<tr>
+			<td colspan="2"><h3 align="center" style="color: #fc0f03;"><u><strong>Flavors to choose from!</strong></u><h3></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">TEXAS BUFFALO</h4>
+				<h5><i>Traditional American Buffalo-style. A blend of cayenne peppers with tangy vinegar base.</i></h5></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">TERIYAKI</h4>
+				<h5><i>Sweet and Soy. It's low on head, but not on flavor.</i></h5></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">MANGO HABANERO</h4>
+				<h5><i>It's sweet, with heat. And then some. Seriously.</i></h5></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">HICKORY SMOKED BBQ</h4>
+				<h5><i>Bold. Smoky. Sweet. Rich. It's everything you love about BBQ, but better.</i></h5></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">INFERNO</h4>
+				<h5><i>Hot! Hot! Hot! You've been warned.</i></h5></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">LEMON PEPPER</h4>
+				<h5><i>Zesty Lemon. Cracked black pepper. This dry rub is the ultimate gateway flavor.</i></h5></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">KECAP MANIS</h4>
+				<h5><i>Indonesian sweet soy sauce paired with chilli flakes.</i></h5></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">GARLIC PARMESAN</h4>
+				<h5><i>Savory garlic, buttery parmesan. This dry rub is simple, potent, and delicious.</i></h5></td>
+		</tr>
+		<tr>
+			<td><img src="https://www.seekpng.com/png/detail/12-125229_the-fire-package-flame-icon.png" length="50px" width="80px"></td>
+			<td><h4 style="color: #248743;">LOUISIANA RUB</h4>
+				<h5><i>A cripsy, spiced dry rub, with a distinctly Cajun drawl.</i></h5></td>
+		</tr>
+	</table>
+	</div>
+	<br>
+	<p><span class="links"><i><a href="https://www.wingstop.com.sg/flavors">source 1 |</a><a href="https://www.wingstop.ae/flavor/atomic/"> Source 2 |</a><a href="https://www.wingstop.com.sg/menu"> Source 3 |</a><i></span></p>
+</center>
+</body>
+</html>
